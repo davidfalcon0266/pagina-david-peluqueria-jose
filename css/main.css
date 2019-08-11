@@ -1,0 +1,305 @@
+html {
+    /* este es para que reaccionen bien los nmargin width y padding
+    cuando los aplicamos en la pag */
+    box-sizing: border-box;
+    font-size: 62.5%; /** Reset para REMS - 62.5% = 10px de 16px **/
+}
+/* reseta el codigo y aplica bien los padding margin y width
+siempre se debe colocar en las pag que realicemos */
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+/* darle estylos a todo lo que esta dentro del body */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+}
+.cursiva{
+    width: 100%;
+    font-family: 'Pacifico', cursive;
+    font-weight: 500;
+text-align: center;
+margin: 0 auto !important;
+}
+.letra{
+    color: #ffffff;
+}
+/** Globales **/
+
+/* esta es muy importante se utliza en todos los proyectos
+le da el tamaño a la imagen de manera correcta para que se vea en la 
+pagina y se adapte a los styos que l estemos dando */
+img {
+    max-width: 100%;
+}
+
+
+.navbar-dark .navbar-brand{
+    font-size: 1.7em;
+    font-family: 'Pacifico', cursive;
+    font-weight: 800;
+    color: black;
+}
+
+.navbar .dav{  
+    color: #e84118;
+}
+.main-header{
+    display: block;
+    width: 80%;
+    margin: 0 auto !important;
+}
+
+.carousel-inner img{
+    margin-top: 57px !important;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.carousel-inner{
+    border: 3px solid #e84118;
+}
+
+
+.rojo{
+    color: red;
+}
+.cursiva{
+    color: #e84118;
+font-size: 2em;
+}
+.fondo{
+    display: block;
+    position: relative;
+    background-image: url(../img/fondo2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    padding: 50px !important;
+}
+.background-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100% !important;
+    top: 0px !important;
+    left: 0;
+    background: rgba(30, 39, 46,.6);
+}
+
+.ancho{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.producto .d-flex{
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.productos{
+    width: 40%;
+    margin: 0 auto;
+}
+.productos p{
+    padding: 10px 0 20px 0;
+}
+.galeria_img{
+    width: 90%;
+    min-height: 179px;
+    max-height: 180px;
+    object-fit: cover;
+    transition: all .7s;
+}
+.galeria_img:hover{
+    transform: scale(1.1) !important;
+
+}
+
+.modal{
+    width: 100%;
+    min-height: 500px;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000000;
+display: none;
+}
+.modal--content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+    .modal__img{
+        width: 50%;
+        max-height: 350px;
+        object-fit: cover;
+
+    }
+    .modal__boton{
+        position: absolute;
+        color: white;
+        top: 4px;
+        right: 12px;
+        cursor: pointer;
+        font-weight: bold;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        background: #de423a;
+        text-align: center;
+        font-size: 1.2em;
+        border-radius: 50%;
+font-family: monospace;
+    }
+    
+    .modal__open{
+display: block;
+    }
+    .z h3{position: relative;
+        top: 3em;
+        z-index: 100 !important;
+    }
+
+.video{
+margin-top: -30px;
+z-index: -10 !important;
+}
+
+.precios .cursiva{
+    font-weight: 100;
+    font-size: 1.5em;
+    padding-bottom: 1em;
+
+}
+.precios .row {
+    margin-top: 30px;
+    transition: all .9s;
+}
+.precios .row :hover{
+    transform: scale(1.1) !important;
+
+}
+ul{
+    padding: 0;
+}
+
+li{
+    list-style:none;
+    text-align: center;
+    line-height: 40px;
+}
+
+.precios .card-body{
+    border: 2px solid #e84118;
+}
+
+.formulario{
+    border: 2px solid #e84118;
+    padding: 1em 3em;;
+}
+
+#error{
+    margin-bottom: .7em !important;
+}
+
+@media (max-width: 485px){
+    .media img{
+        width: 60%;
+        margin: 0 auto;
+    }
+    p{
+        font-size: .9em;
+    }
+}
+
+
+@media (max-width: 442px){
+    p{
+        font-size: .7em;
+    }
+    h2{
+        font-size: 1.4em !important;
+    }
+    .productos {
+        width: 100%;
+        margin: 0 auto !important;
+    }
+    .galeria_img {
+        display: block;
+        border-radius: 50%;
+        border: 2px solid #e84118;
+width: 200px;  
+height: 200px;     
+margin: 0 auto !important;   
+padding: 0; 
+}
+.navbar-nav .nav-link{
+    font-size: 1em;
+    transition: all .9s;
+}
+.navbar-nav .nav-link:hover{
+    transform: scale(1.1);
+}
+.precios .card-body{
+    width: 80%;
+    margin: 0 auto;
+}
+.card-body{
+    margin-bottom: 1em !important;
+}
+.precios .row :hover{
+    transform: none !important;
+
+}
+.card{
+    border: none;
+}
+.siva{
+    font-size: 1em !important;
+}
+li{
+    font-size: .9em;
+}
+.pt-5, .py-5 {
+    font-size: .9em;
+
+}
+
+}
+
+@media (max-width: 350px){
+    li{
+        font-size: .7em;
+    }
+    .pt-5, .py-5 {
+        font-size: .8em;
+    
+    }
+    .precios .card-body{
+        width: 80%;
+        height: 220px;
+        margin: 0 auto;
+    }
+    .precios .cursiva {
+        font-weight: 100;
+        font-size: 1.2em;
+padding: 0 !important;
+margin: 0;
+}
+}
+.sociales img{
+    max-width: 50px;
+    color: #ffffff;
+    transition: all .5s;
+    border-radius: 50%;
+}
+.sociales img:hover{
+    transform: scale(1.1);
+}
