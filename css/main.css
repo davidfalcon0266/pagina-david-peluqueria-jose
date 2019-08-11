@@ -47,6 +47,8 @@ img {
 .navbar .dav{  
     color: #e84118;
 }
+.navbar .nav-link{transition: all. 9s;}
+.navbar .nav-link{background: #e84118;} 
 .main-header{
     display: block;
     width: 80%;
